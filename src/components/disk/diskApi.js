@@ -10,11 +10,4 @@ async function fetchDisks() {
         const data = j['_embedded'].diskList;
         return data;
 }
-async function fetchDisksById(id) {
-        const url = `${diskUrl}/${id}}`
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data);
-        return data;
-}
 export {getDisks, fetchDisks};

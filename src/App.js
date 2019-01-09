@@ -21,7 +21,7 @@ class App extends Component {
           <Switch>
             <Route path="/home" component={HomePage}></Route>
             <Route path="/disk/create" component={CreateDiskPage}></Route>
-            <Route path="/"></Route>
+            <Route path="/" component={HomePage}></Route>
           </Switch>
         </BrowserRouter>
       // </div>
